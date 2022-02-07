@@ -14,6 +14,7 @@ public class UsedCarLot {
      */
     public UsedCarLot() {
         inventory = new ArrayList<Car>();
+        System.out.print("Car Lot Created!\n");
     }
 
     /**
@@ -94,7 +95,7 @@ public class UsedCarLot {
      * <p>
      * PRECONDITION: indexOfCarToSell &lt; inventory.size()
      *
-     * @param indexOfCarToSell
+     * @param indexOfCarToSell the index of the Car being sold
      * @return the Car that is being "sold" (removed from lot)
      */
     public Car sellCarShift(int indexOfCarToSell)
